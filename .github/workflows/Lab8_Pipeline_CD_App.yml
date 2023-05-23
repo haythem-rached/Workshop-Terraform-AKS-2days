@@ -32,7 +32,7 @@ jobs:
         run: |      
           cd Kubernetes/Manifests/coolapi          
           kubectl apply -f 1_namespace.yml
-          kubectl create secret docker-registry "arc-secret" \
+          kubectl create secret docker-registry "acr-secret" \
           --namespace "coolapi"\
           --docker-server=acrstanrached.azurecr.io \
           --docker-username="acrstanrached" \
